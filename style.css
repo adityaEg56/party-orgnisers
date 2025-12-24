@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #fff4e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 20px;
+}
+
+.card {
+  background: #fffaf3;
+  width: 100%;
+  max-width: 360px;
+  padding: 26px 22px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 12px 35px rgba(177, 18, 38, 0.25);
+  border: 1px solid #f1c6b0;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 400;
+  color: #b11226;
+}
+
+h1 {
+  margin: 8px 0 18px;
+  font-size: 30px;
+  color: #8c0f1f;
+}
+
+#qrcode {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 14px;
+  display: inline-block;
+  border: 2px solid #f0b7a4;
+}
+
+.upi {
+  margin-top: 14px;
+  font-size: 16px;
+  color: #b11226;
+}
+
+.upi b {
+  color: #7a0c1a;
+}
+
+.hint {
+  font-size: 13px;
+  color: #9a4b4b;
+  margin-bottom: 14px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #f0c2ad;
+  margin: 16px 0;
+}
+
+.instructions {
+  font-size: 14px;
+  color: #7a0c1a;
+  line-height: 1.5;
+}
+
+.instructions p {
+  margin: 8px 0;
+}
+
+.instructions b {
+  color: #b11226;
+}
+
+.note {
+  font-style: italic;
+  color: #9a4b4b;
+}
