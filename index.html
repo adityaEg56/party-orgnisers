@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>UPI Party Contribution</title>
+  <title>Party Contribution</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="stylesheet" href="style.css" />
 
+  <!-- QR generator -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <!-- Confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
 
@@ -16,11 +21,16 @@
 
     <div id="qrcode"></div>
 
+    <p class="amount">Fixed Contribution: ₹1000</p>
+
     <p class="upi">
       UPI ID: <b>9238480905@ybl</b>
     </p>
 
-    <p class="hint">Scan & Pay using any UPI app</p>
+    <a class="pay-btn"
+       href="upi://pay?pa=9238480905@ybl&pn=Vineet&am=1000&cu=INR">
+       Pay ₹1000 Now 🎉
+    </a>
 
     <hr />
 
@@ -28,32 +38,18 @@
       <p>Hey friends 👋</p>
 
       <p>
-        After school, we are meeting again after <b>2 years</b> 🎉  
-        This small contribution is for our party arrangement.
+        After school, we are meeting again after <b>2 years</b> 🎊  
+        This contribution is for our party arrangement.
       </p>
 
-      <p>
-        Please scan the QR or use the UPI ID.  
-        <b>and give your contribution ❤️</b>
-      </p>
+      <p><b>₹1000 per person</b> — please don’t change the amount 🙏</p>
 
       <p class="note">
-        Let’s meet, laugh and relive old school memories ✨
+        Let’s laugh, eat, and relive old memories 🥳
       </p>
     </div>
   </div>
 
-  <script>
-    const upiLink =
-      "upi://pay?pa=9238480905@ybl&pn=Vineet&cu=INR";
-
-    new QRCode(document.getElementById("qrcode"), {
-      text: upiLink,
-      width: 230,
-      height: 230,
-      correctLevel: QRCode.CorrectLevel.H
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>

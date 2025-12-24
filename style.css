@@ -18,10 +18,16 @@ body {
   width: 100%;
   max-width: 360px;
   padding: 26px 22px;
-  border-radius: 18px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 12px 35px rgba(177, 18, 38, 0.25);
+  box-shadow: 0 14px 40px rgba(177, 18, 38, 0.25);
   border: 1px solid #f1c6b0;
+  animation: popIn 0.8s ease;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
 }
 
 h2 {
@@ -31,33 +37,45 @@ h2 {
 }
 
 h1 {
-  margin: 8px 0 18px;
+  margin: 6px 0 16px;
   font-size: 30px;
   color: #8c0f1f;
 }
 
 #qrcode {
-  background: #ffffff;
+  background: #fff;
   padding: 12px;
   border-radius: 14px;
   display: inline-block;
   border: 2px solid #f0b7a4;
 }
 
-.upi {
+.amount {
   margin-top: 14px;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
   color: #b11226;
 }
 
-.upi b {
+.upi {
+  font-size: 14px;
   color: #7a0c1a;
 }
 
-.hint {
-  font-size: 13px;
-  color: #9a4b4b;
-  margin-bottom: 14px;
+.pay-btn {
+  display: block;
+  margin-top: 14px;
+  padding: 14px;
+  background: linear-gradient(135deg, #b11226, #e63946);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.pay-btn:active {
+  transform: scale(0.97);
 }
 
 hr {
@@ -71,10 +89,6 @@ hr {
   font-size: 14px;
   color: #7a0c1a;
   line-height: 1.5;
-}
-
-.instructions p {
-  margin: 8px 0;
 }
 
 .instructions b {
